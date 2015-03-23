@@ -4,10 +4,6 @@
 <style type="text/css">
   body { font-family: "Comic Sans MS", "Marker Felt", cursive, sans-serif; color: black; background: white; }
   #title { font-size: 400%; }
-  .score { font-size: 150%; color: red; text-align: center; }
-  .oldscore { font-size: 150%; color: grey; text-align: center; }
-  #scorecard td { border: 2px solid #ccc; }
-  .otitle { text-align: center; }
 
 blink {
   -webkit-animation: blink 1s step-end infinite;
@@ -21,6 +17,37 @@ blink {
 @keyframes blink {
   67% { opacity: 0 }
 }
+
+#steal_table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.tabular {
+  border-collapse: collapse;
+  border-spacing: 5px;
+  border: 1px solid #006006;
+}
+
+.tabular tr:nth-child(even) {
+  background: #C0FFD6;
+}
+
+.tabular tr:nth-child(odd) {
+  background: #FFFFFF;
+}
+
+.tabular td {
+  padding: 5px 10px 5px 10px;
+}
+
+.tabular th {
+  background: #00A026;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+}
+
 </style>
 </head>
 <body>
@@ -36,15 +63,115 @@ blink {
 <br>
 <h2><!-- <span style="color:red">New!</span> --><img src="hot.gif"> Capture The Boombox Contest</h2>
 <p><img src="clipart.gif"></p>
-<p><blink style="font-size: x-large; color: red; font-weight: bold;">We just rescued the boombox from the recent kidnapping. GLORY RESTORED! -- Signed, GO</blink></p>
-<table id="scorecard">
-<tr><td></td><td>May 16, 2013</td><td>Oct 16, 2013</td><td>January 22, 2014</td><td>May 19, 2014</td><td>May 20, 2014</td><td>May 20, 2014</td><td>May 24, 2014</td><td>Summer 2014</td><td>July 28, 2014</td></tr>
-<tr><td><h3 class="otitle">Glorious Office</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">3</h3></td><td><h3 class="oldscore">3</h3></td><td><h3 class="score">4</h3></td></tr>
-<tr><td><h3 class="otitle">32-G585A</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="score">1</h3></td></tr>
-<tr><td><h3 class="otitle">32-G585B</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="oldscore">2</h3></td><td><h3 class="score">2</h3></td></tr>
-<tr><td><h3 class="otitle">32-G578</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="score">1</h3></td></tr>
-<tr><td><h3 class="otitle">32-G628</h3></td><td><h3 class="oldscore">0</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="oldscore">1</h3></td><td><h3 class="score">1</h3></td></tr>
+
+<p><b>Present Location:</b> Glorious Office</p>
+
+<table id="steal_table">
+  <tr>
+    <td>
+
+<!-- Record of steals. -->
+
+<table class="tabular">
+  <tr>
+    <th colspan="2" style="text-align: center">Steal Record</th>
+  </tr>
+  <tr>
+    <th>Thief</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>May 16, 2013</td>
+  </tr>
+  <tr>
+    <td>32-G628</td>
+    <td>Oct. 16, 2013</td>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>January 22, 2014</td>
+  </tr>
+  <tr>
+    <td>32-G585B</td>
+    <td>May 19, 2014</td>
+  </tr>
+  <tr>
+    <td>32-G585A</td>
+    <td>May 20, 2014</td>
+  </tr>
+  <tr>
+    <td>32-G585B</td>
+    <td>May 20, 2014</td>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>May 24, 2014</td>
+  </tr>
+  <tr>
+    <td>32-G578</td>
+    <td>Summer, 2014</td>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>July 28, 2014</td>
+  </tr>
+  <tr>
+    <td>32-G585A</td>
+    <td>January, 2015</td>
+  </tr>
+  <tr>
+    <td>32-G636</td>
+    <td>January, 2015</td>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>March 23, 2015</td>
+  </tr>
 </table>
-<!-- <h3>Glorious Office: <span class="score">1</span>, 32-G628: <span class="score">0<span></h3> -->
+
+    </td>
+    <td valign="top">
+
+<!-- By-office summary. -->
+
+<table class="tabular">
+  <tr>
+    <th colspan="2" style="text-align: center">Summary</th>
+  </tr>
+  <tr>
+    <th>Thief</th>
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Glorious Office</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>32-G585A</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>32-G585B</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>32-G578</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>32-G628</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>32-G636</td>
+    <td>1</td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+
 </body>
 </html>
